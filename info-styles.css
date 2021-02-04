@@ -1,0 +1,236 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: perpetua;
+    margin:0px;
+    
+}
+h1 {
+    font-family: GillSans;
+    font-weight:bold;
+}
+p{
+  font-size: 40px;
+  font-weight:bold;
+  line-height:26pt;
+  color:black;
+  font-family: "perpetua";
+  
+}
+.yhteystiedot{
+  font-size:40px;
+  font-weight:bold;
+  line-height:38pt;
+  color:black;
+  font-family: "perpetua";
+}
+.yritt{
+  position:static;
+  height:70px;
+  padding-left:5px; 
+}
+strong{
+  font-size:65px;
+  color:black;
+  font-family: "perpetua";
+}
+.spaced{
+  word-spacing: 1.3em;
+  font-size: 40px;
+  font-weight:bold;
+  line-height:26pt;
+  color:black;
+  font-family: "perpetua";
+}
+.wpn{
+  position: static;
+  height:70px;
+}
+.ajat{
+  position:absolute;
+  top:110px;
+  left:655px;
+}
+.some{
+  float:right;
+  padding-right:20px;
+}
+
+.kuvat{
+  height:0px;
+  position: initial;
+  top: 0;
+  left: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: perpetua;
+    color: white;
+    font-size: 40px;
+}
+/* Style the header */
+header {
+  background-color: #1d63ee;
+  text-align: center;
+  border-bottom:10px solid black;
+  height:190px;
+}
+.ostoskori {
+  float: right;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-right: 30px;
+}
+.logo {
+  margin: 0 auto;
+  transform: translate(0%, -15%);
+}
+.peli1 {
+  text-align: center;
+  float: left;
+  margin-left:0px;
+  font-size: 60px;
+  font-family: GillSans;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the navigation bar */
+.navbar {
+	list-style: none;
+	padding: 0;
+	margin: -4px;
+	
+	left: 50%;
+  top: 22%;
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+	
+}
+.a1{
+	color:white;
+	text-decoration:none;
+}
+.a1:hover{
+	color:black;
+}
+.a2{
+	color:black;
+}
+.navbar-item1{
+	float: left;
+		font-weight: bold;
+		color:white;
+		padding: 5px 20px;
+		position: relative;
+		cursor: pointer;
+		margin-left: 1px;
+}
+.navbar-item1::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: white;
+  z-index: -1;
+  transform: skew(-45deg);
+  transition: all .1s linear;
+  border-radius:25px;
+}
+
+	.navbar-item {
+		float: left;
+		font-weight: bold;
+		color:white;
+		padding: 5px 20px;
+		position: relative;
+		cursor: pointer;
+		margin-left: 1px;
+	}
+		.navbar-item::after {
+			content: "";
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background-color: black;
+			z-index: -1;
+			transform: skew(-45deg);
+			transition: all .2s linear;
+			border-radius:25px;
+		}
+		
+		.navbar-item:hover::after {
+			background-color:white;
+		}
+		li:hover a {
+			color: black;
+		}
+    .navbar-nav > li{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .navigaatio{
+      background-color:black;
+      margin: auto;
+      width: 25%;
+      height:40px;
+      transform:skew(-45deg);
+      border-bottom-left-radius:50px;
+      border-bottom-right-radius:22px;
+    }
+
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:rgb(77, 77, 77);
+  height:180px;
+  border-top:10px solid black;
+  margin:0px;
+}
+.col{
+  font-family: perpetua;
+  font-size:55px;
+  float:left;
+  width:25%;
+}
+.container{
+  width:100%;
+
+}
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+@font-face {
+    font-family: perpetua;
+    src: url(unicode.perpetua.ttf);
+}
+@font-face {
+    font-family: GillSans;
+    src: url(GLSNECB.ttf);
+}
