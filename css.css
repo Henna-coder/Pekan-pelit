@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+html{
+  overflow-y:overlay;
+}
+body {
+    font-family: perpetua;
+    margin: 0px;
+}
+/* Style the header */
+header {
+  background-color: #1d63ee;
+  text-align: center;
+  margin: 0px;
+  height: 190px;
+  border-bottom: 10px solid black;
+}
+.centered {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: GillSans;
+    font-weight: bolder;
+    color: white;
+    font-size: 120px;
+}
+.ostoskori {
+  float: right;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-right: 30px;
+}
+.logo {
+  margin: 0 auto;
+  transform: translate(0%, -15%);
+}
+/* Style the navigation bar */
+.navbar {
+	list-style: none;
+	padding: 0;
+	margin: -4px;
+	
+	left: 50%;
+  top: 22%;
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+}
+
+.a1{
+	color:white;
+	text-decoration:none;
+}
+.a1:hover{
+	color:black;
+}
+
+.a2{
+	color:black;
+}
+.navbar-item1{
+	float: left;
+		font-weight: bold;
+		color:white;
+		padding: 5px 20px;
+		position: relative;
+		cursor: pointer;
+		margin-left: 1px;
+}
+.navbar-item1::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: white;
+  z-index: -1;
+  transform: skew(-45deg);
+  transition: all .2s linear;
+  border-radius:25px; 
+}
+
+	.navbar-item {
+		float: left;
+		font-weight: bold;
+		color:white;
+		padding: 5px 20px;
+		position: relative;
+		cursor: pointer;
+		margin-left: 1px;
+	}
+		.navbar-item::after {
+			content: "";
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background-color: black;
+			z-index: -1;
+			transform: skew(-45deg);
+			transition: all .2s linear;
+			border-radius:25px;
+		}
+		
+		.navbar-item:hover::after {
+			background-color:white;
+			
+		}
+		li:hover a {
+			color: black;
+		}
+    .navbar-nav > li{
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .navigaatio{
+      background-color:black;
+      margin: auto;
+      width: 25%;
+      height:40px;
+      transform:skew(-45deg);
+      border-bottom-left-radius:50px;
+      border-bottom-right-radius:22px;
+    }
+.container {
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+.peli {
+  float: left;
+}
+.text {
+  width: 40%;
+  float: right;
+}
+.hinta {
+  float: right;
+  margin-right: 60px;
+}
+.kuva {
+  float: right;
+}
+.peli1 {
+  text-align: center;
+  float: left;
+  margin-left:0px;
+  font-size: 60px;
+  font-family: GillSans;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+}
+@font-face {
+    font-family: perpetua;
+    src: url(unicode.perpetua.ttf);
+}
+@font-face {
+    font-family: GillSans;
+    src: url(GLSNECB.ttf);
+}
+
+
+h2 {
+  font-family: perpetua;
+  font-size: 10px;
+  float: left;
+}
+p {
+  font-family: perpetua;
+  font-size: 18px;
+  float: right;
+}
+.col {
+  margin-right: 250px;
+}
+.lisää1 {
+  float: right;
+  margin-right: 30px;
+}
+.lisää2 {
+  float: right;
+  margin-right: 30px;
+}
+.lisää3 {
+  float: right;
+  margin-right: 35px;
+  margin-top: 12px;
+}
+.kortti {
+  float: left;
+  margin-left: 120px;
+}
+.teksti1 {
+  font-family: perpetua;
+  font-size: 18px;
+  float: right;
+  margin-right: 35px;
+}
+.aly {
+  font-size: 22px;
+}
+.aly2 {
+  font-size: 22px;
+  margin-right: 40px;
+}
+.kori1 {
+  float: right;
+  margin-right: 30px;
+  margin-top: -15px;
+}
+.kori2 {
+  float: right;
+  margin-right: 60px;
+  margin-top: 6px;
+}
+.kori3 {
+  float: right;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+.kori4 {
+  float: right;
+  margin-right: 60px;
+  margin-top: -10px;
+}
+.lauta1 {
+  float:right;
+  margin-right: 50px;
+}
+.lauta2 {
+  float:right;
+  margin-bottom: 3px;
+}
+.lauta3 {
+  float:right;
+  margin-right: 50px;
+  margin-top: -4px;
+}
+.lauta4 {
+  float:right;
+}
+.lau1 {
+  margin-right: -18px;
+}
+.lau2 {
+  margin-right: 15px;
+}
+.lau3 {
+  margin-right: 67px;
+}
+.lau4 {
+  margin-right: 15px;
+}
+.hero {
+  margin-left: 30px;
+}
+.hotel {
+  margin-left: -50px;
+}
+.carca {
+  margin-left: -160px;
+}
+.race {
+  margin-left: -200px;
+}
+.otso1 {
+  margin-left: -320px;
+}
+.otso2 {
+  margin-left: -360px;
+}
+.otso3 {
+  margin-left: -400px;
+}
+.otso4 {
+  margin-left: -300px;
+}
+
